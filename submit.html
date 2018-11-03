@@ -95,14 +95,14 @@
                                 class="form-control"
                                 id="title"
                                 placeholder="Enter Title"
-                                required="true"
+                                required="required"
                                 th:field="*{title}">
                         <small th:errors="*{title}" style="color:red;"></small>
                     </div>
                     <div class="form-group">
                         <label for="url">URL</label>
-                        <input type="url" class="form-control" id="url" placeholder="URL" required="true" th:field="*{url}">
-                        <span th:errors="*{url}" class="error"></span>
+                        <input type="url" class="form-control" id="url" placeholder="URL" required="required" th:field="*{url}">
+                        <small th:errors="*{url}" style="color:red;"></small>
                     </div>
                     <div class="form-group">
                         <label for="description">Description</label>
